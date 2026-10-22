@@ -1,0 +1,17 @@
+#background {
+     background-color: #f0f0f0;
+     padding: 20px;
+     text-align: center;
+ }
+
+#header {
+     background-color: #4CAF50;
+     color: white;
+     padding: 10px;
+     text-align: center;
+ }
+
+#h1{
+    font-size:40px;
+    color:black
+}
