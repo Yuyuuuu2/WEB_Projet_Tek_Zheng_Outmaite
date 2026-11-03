@@ -22,3 +22,42 @@
     color: white;
     text-align: center;
 }
+
+.images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.titre_lol{
+    text-align:center;
+}
+
+.banniere{
+    background-image: url("../Images/lol_image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banniere h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 3px 3px 8px black;
+}
+
+.body_lol{
+    background-color: #0a192f;
+    color: white;
+}
+
+.h2_lol{
+    text-align: center;
+}
