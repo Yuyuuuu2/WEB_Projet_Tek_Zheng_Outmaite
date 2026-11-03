@@ -16,8 +16,9 @@
     color:black
 }
 
-.smt.html {
-    font-size: 20px;
-    color: black;
+.smt{
+    background-image: url('/Images/SMT BG.jpg');
+    background-size: cover;
+    color: white;
     text-align: center;
 }
