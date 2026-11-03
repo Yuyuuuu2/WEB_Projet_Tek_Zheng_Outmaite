@@ -16,10 +16,11 @@
     color:black
 }
 
-.smt{
-    background-image: url('/Images/SMT BG.jpg');
+.persona3{
+    background-color:blue;
+    padding: 20px;
     background-size: cover;
-    color: white;
+    color: black;
     text-align: center;
 }
 
