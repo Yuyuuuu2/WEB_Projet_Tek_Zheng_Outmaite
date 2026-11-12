@@ -44,7 +44,7 @@
     text-align:center;
 }
 
-.banniere{
+.banniere1{
     background-image: url("../Images/lol_image.jpg");
     background-size: cover;
     background-position: center;
@@ -55,7 +55,7 @@
     align-items: center;
 }
 
-.banniere h1 {
+.banniere1 h1 {
     color: white;
     font-size: 50px;
     text-shadow: 3px 3px 8px black;
@@ -106,76 +106,99 @@
     font-weight: bold;
 }
 
-
-.grand_cadre_erreur {
-    border: 3px solid #d4af37;
-    border-radius: 15px;
-    padding: 30px;
-    margin: 40px auto;
-    width: 85%;
-    background-color: #0d2038;
-    box-sizing: border-box;
+.logo-carousel {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
 }
 
-
-.titre_tips {
-    text-align: center;
-    color: #d4af37;
-    font-size: 28px;
-    margin-top: 50px;
-}
-
-.tips {
+.logo-track {
     display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
+    align-items: center;
+    width: max-content;
+    animation: scroll 18s linear infinite;
+}
+
+.logo-track img {
+    height: 150px;
+    margin: 0 50px;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.logo-track img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+.banniere {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+
+    background-color: #101a30;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    z-index: 1000;
+}
+
+
+.logo img {
+    height: 155px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-.tips li {
-    width: 400px;
-    padding: 20px;
-    border: 2px solid #d4af37;
-    border-radius: 12px;
-    background-color: #152840;
-    text-align: center;
-}
-
-.tips img {
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
-    border-radius: 10px;
-}
-
-.tips h4 {
-    color: #d4af37;
-    font-size: 20px;
-}
-
-.tips p {
+.navigation a {
     color: white;
-    font-size: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: 0.3s;
 }
 
-.tips li h7{
-    color:#d4af37;
-    font-weight: bold;
+
+.navigation a:hover {
+    color: #8da9ff;
+    transform: scale(1.1);
 }
 
-.tips li h8{
-    color:#d4af37;
-    font-weight: bold;
-}
 
-.grand_cadre_tips{
-    border: 3px solid #d4af37;
-    border-radius: 15px;
-    padding: 30px;
-    margin: 40px auto;
-    width: 85%;
-    background-color: #0d2038;
-    box-sizing: border-box;
+body {
+    padding-top: 110px;
 }
