@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-=======
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('"https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"');
 
 #background {
      background-color: black;
@@ -284,4 +283,139 @@ body {
     font-weight: bolder;
 }
 
->>>>>>> 2f94eae10660ec4931df1a7b0ea77d0ae85608d1
+#chatbot-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f4f9f4;
+    border-radius: 10px;
+}
+
+#chat-container {
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#chat-box {
+    height: 300px;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+
+#chat-input-area {
+    display: flex;
+    gap: 10px;
+    align-items: center; 
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#bouton-envoi {
+    padding: 10px 20px;
+    min-width: 100px;    
+    border: none;
+    background-color: rgb(22,55,103);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    white-space: nowrap;   
+}
+
+#bouton-envoi:hover {
+    background-color: rgb(11, 27, 51);
+}
+
+.message {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.user {
+    background-color: rgb(22,55,103);
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.bot {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+}
+
+#chat-box {
+    display: flex;
+    flex-direction: column;
+}
+
+#map {
+    height: 400px;
+    width: 40%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-position: center;
+    background-color: black;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.liste-jeux ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.jeux{
+    background-image: url('../Images/jeux.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', monospace;
+    font-weight: 700;
+}
+
+.liste-jeux img {
+    transition: transform 0.3s ease;
+}
+
+.liste-jeux img:hover {
+    transform: scale(1.1);
+}
+
+.jeux h2 {
+    font-size: 80px;
+    text-shadow: 3px 3px 8px black;
+    color: white;
+}
+
+.jeux h3 {
+    font-size: 50px;
+    text-shadow: 3px 3px 8px black;
+    color: white;
+}

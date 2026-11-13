@@ -1,0 +1,275 @@
+{
+  "intents": [
+    {
+      "tag": "salutation",
+      "description": "L'utilisateur salue le site ou démarre une conversation.",
+      "patterns": [
+        "Salut",
+        "Bonjour",
+        "Yo",
+        "Coucou",
+        "Bonsoir"
+      ],
+      "responses": [
+        "Salut ! Tu cherches des astuces sur Monster Hunter, League of Legends ou Persona 3 ?"
+      ]
+    },
+    {
+      "tag": "aide_generale",
+      "description": "L'utilisateur demande ce que le site peut faire.",
+      "patterns": [
+        "Tu peux m'aider ?",
+        "Quels jeux sont disponibles ?",
+        "Comment fonctionne le site ?",
+        "Je cherche des conseils gaming"
+      ],
+      "responses": [
+        "Je peux te donner des astuces, expliquer des mécaniques et t'aider à progresser sur Monster Hunter, LoL et Persona 3."
+      ]
+    },
+    {
+      "tag": "monster_hunter_debutant",
+      "description": "Conseils pour débuter dans Monster Hunter.",
+      "patterns": [
+        "Je débute sur Monster Hunter",
+        "Comment bien commencer sur MH ?",
+        "Quelle arme choisir pour débuter ?",
+        "Des conseils pour un nouveau chasseur ?"
+      ],
+      "entities": [
+        "jeu",
+        "arme",
+        "version"
+      ],
+      "responses": [
+        "Commence par tester plusieurs types d'armes au terrain d'entraînement, prépare tes objets avant une chasse et observe les mouvements du monstre avant d'attaquer."
+      ]
+    },
+    {
+      "tag": "monster_hunter_monstre",
+      "description": "Conseils pour battre un monstre précis dans Monster Hunter.",
+      "patterns": [
+        "Comment battre le Rathalos ?",
+        "Quelle est la faiblesse de Nergigante ?",
+        "Comment éviter les attaques du monstre ?",
+        "Donne-moi une stratégie contre ce boss"
+      ],
+      "entities": [
+        "monstre",
+        "faiblesse",
+        "jeu",
+        "version"
+      ],
+      "responses": [
+        "Indique le nom du monstre et ta version de Monster Hunter : je pourrai proposer ses points faibles, les résistances utiles et une stratégie de chasse."
+      ]
+    },
+    {
+      "tag": "monster_hunter_build",
+      "description": "Demande de build, d'équipement ou de compétences pour Monster Hunter.",
+      "patterns": [
+        "Propose-moi un build MH",
+        "Quelle armure utiliser avec la grande épée ?",
+        "Quelles compétences choisir ?",
+        "Quel équipement pour le endgame ?"
+      ],
+      "entities": [
+        "arme",
+        "rang",
+        "monstre",
+        "style_de_jeu",
+        "version"
+      ],
+      "responses": [
+        "Précise ton arme, ton rang et ta version du jeu pour obtenir un build adapté."
+      ]
+    },
+    {
+      "tag": "lol_debutant",
+      "description": "Conseils pour débuter ou progresser sur League of Legends.",
+      "patterns": [
+        "Je débute sur LoL",
+        "Comment progresser sur League of Legends ?",
+        "Quels champions sont faciles ?",
+        "Comment mieux jouer à LoL ?"
+      ],
+      "entities": [
+        "role",
+        "lane",
+        "champion",
+        "rang"
+      ],
+      "responses": [
+        "Pour progresser, travaille les last hits, la vision et la minimap. Choisis un petit groupe de champions et concentre-toi sur un rôle."
+      ]
+    },
+    {
+      "tag": "lol_champion",
+      "description": "Conseils sur un champion, ses compétences ou son style de jeu.",
+      "patterns": [
+        "Comment jouer Ahri ?",
+        "Explique le combo de Yasuo",
+        "Quels objets acheter sur Jinx ?",
+        "Comment contrer Zed ?"
+      ],
+      "entities": [
+        "champion",
+        "role",
+        "matchup"
+      ],
+      "responses": [
+        "Donne-moi le champion et, si possible, ton rôle ou ton matchup pour recevoir des conseils ciblés."
+      ]
+    },
+    {
+      "tag": "lol_macro",
+      "description": "Conseils de macro, objectifs et décisions en partie sur LoL.",
+      "patterns": [
+        "Quand faut-il prendre le dragon ?",
+        "Comment mieux gérer ma lane ?",
+        "Quand faire un split push ?",
+        "Comment jouer autour du Baron ?"
+      ],
+      "entities": [
+        "objectif",
+        "lane",
+        "phase_de_jeu",
+        "rang"
+      ],
+      "responses": [
+        "Regarde d'abord les priorités de lane, la position des adversaires et les timers d'objectifs. Évite de commencer un objectif sans vision ni avantage numérique."
+      ]
+    },
+    {
+      "tag": "persona3_debutant",
+      "description": "Conseils pour commencer Persona 3.",
+      "patterns": [
+        "Je commence Persona 3",
+        "Des conseils sans spoiler ?",
+        "Que faut-il faire en priorité ?",
+        "Comment bien débuter dans Persona 3 ?"
+      ],
+      "entities": [
+        "edition",
+        "niveau",
+        "progression"
+      ],
+      "responses": [
+        "Sans spoiler : organise tes journées, développe régulièrement tes Social Links, garde du temps pour tes statistiques sociales et prépare ton équipe avant les périodes importantes."
+      ]
+    },
+    {
+      "tag": "persona3_social_links",
+      "description": "Aide sur les Social Links et la gestion du calendrier dans Persona 3.",
+      "patterns": [
+        "Comment monter les Social Links ?",
+        "Quels Social Links prioriser ?",
+        "Comment optimiser mon calendrier ?",
+        "J'ai raté une journée, est-ce grave ?"
+      ],
+      "entities": [
+        "social_link",
+        "date_jeu",
+        "edition"
+      ],
+      "responses": [
+        "Précise ton édition et ta date actuelle en jeu. Je pourrai t'aider à organiser tes journées et tes Social Links."
+      ]
+    },
+    {
+      "tag": "persona3_combat",
+      "description": "Conseils de combat, Personas, fusion et exploration dans Persona 3.",
+      "patterns": [
+        "Comment gagner les combats dans Persona 3 ?",
+        "Quelles Personas fusionner ?",
+        "Comment exploiter les faiblesses ?",
+        "Comment préparer mon équipe pour le Tartarus ?"
+      ],
+      "entities": [
+        "persona",
+        "faiblesse",
+        "boss",
+        "niveau",
+        "edition"
+      ],
+      "responses": [
+        "Exploite les faiblesses élémentaires, garde des Personas couvrant plusieurs éléments et apporte des objets de soin. Indique le boss ou ton niveau pour un conseil précis."
+      ]
+    },
+    {
+      "tag": "demande_guide",
+      "description": "L'utilisateur demande un guide structuré sur un sujet.",
+      "patterns": [
+        "Fais-moi un guide sur les runes",
+        "Je veux un guide complet",
+        "Explique-moi cette mécanique étape par étape",
+        "Donne-moi une checklist pour progresser"
+      ],
+      "entities": [
+        "jeu",
+        "sujet",
+        "niveau"
+      ],
+      "responses": [
+        "Bien sûr ! Précise le jeu et le sujet du guide, et je te proposerai des étapes claires."
+      ]
+    },
+    {
+      "tag": "comparaison",
+      "description": "L'utilisateur souhaite comparer des personnages, équipements, stratégies ou éditions.",
+      "patterns": [
+        "Quelle arme est la meilleure ?",
+        "Compare ces deux champions",
+        "Quelle édition de Persona 3 choisir ?",
+        "Quel build est le plus efficace ?"
+      ],
+      "entities": [
+        "jeu",
+        "option_a",
+        "option_b",
+        "critere"
+      ],
+      "responses": [
+        "Je peux comparer les options selon ton niveau, ton style de jeu et ton objectif. Quelles options veux-tu mettre face à face ?"
+      ]
+    },
+    {
+      "tag": "clarification_jeu",
+      "description": "Le jeu concerné n'est pas identifiable avec certitude.",
+      "patterns": [
+        "J'ai besoin d'un conseil",
+        "Comment faire ça ?",
+        "Je suis bloqué",
+        "Aide-moi à gagner"
+      ],
+      "entities": [
+        "jeu",
+        "sujet"
+      ],
+      "responses": [
+        "Sur quel jeu veux-tu de l'aide : Monster Hunter, League of Legends ou Persona 3 ?"
+      ]
+    },
+    {
+      "tag": "remerciement",
+      "description": "L'utilisateur remercie le site.",
+      "patterns": [
+        "Merci",
+        "Merci beaucoup",
+        "C'est clair",
+        "Bien joué"
+      ],
+      "responses": [
+        "Avec plaisir ! Bon jeu et bonne progression !"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "description": "L'intention ne correspond à aucune catégorie connue.",
+      "patterns": [],
+      "responses": [
+        "Je n'ai pas bien compris. Reformule ta question ou précise si elle concerne Monster Hunter, League of Legends ou Persona 3."
+      ]
+    }
+  ]
+}
