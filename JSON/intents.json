@@ -16,12 +16,14 @@
         "Salut le bot",
         "Bien le bonjour",
         "Hello",
-        "Vous êtes là ?"
+        "Vous êtes là ?",
+        "Salut Gizmo",
+        "Bonjour Gizmo"
       ],
       "responses": [
-        "Salut ! Bienvenue sur ton assistant gaming ! Tu veux parler de Monster Hunter, League of Legends ou Persona 3 ?",
-        "Hey ! Prêt à progresser ? Dis-moi sur quel jeu tu as besoin d'aide !",
-        "Yo ! Une question sur un boss, un build ou une stratégie ? Je suis là pour t'aider !"
+        "Salut ! Bienvenue, je m'appelle Gizmo ! Tu veux parler de Monster Hunter, League of Legends ou Persona 3 ?",
+        "Hey c'est Gizmo ! Prêt à progresser ? Dis-moi sur quel jeu tu as besoin d'aide !",
+        "Yo Gizmo à l'appareil ! Une question sur un boss, un build ou une stratégie ? Je suis là pour t'aider !"
       ]
     },
     {
