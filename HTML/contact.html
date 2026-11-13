@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,6 +7,7 @@
     <link href="../CSS/styles.css" rel="stylesheet">
     <title>Nous Contacter</title>
 </head>
+<script src="../JS/transition.js"></script>
 <body class="jeux">
 
     <header class="banniere">
@@ -24,29 +26,30 @@
     </header>
 
     <main>
+
         <h1>Nous Contacter</h1>
 
-        <form class="formulaire-contact" action="#" method="post">
+        <form class="formulaire-contact" id="form-contact">
 
             <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" required>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
 
             <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" required>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
 
             <label for="email">Adresse e-mail :</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
 
             <label for="sexe">Sexe :</label>
             <select id="sexe" name="sexe" required>
                 <option value="">Choisissez une option</option>
-                <option value="homme">Homme</option>
-                <option value="femme">Femme</option>
-                <option value="autre">Autre</option>
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+                <option value="Autre">Autre</option>
             </select>
 
             <label for="age">Âge :</label>
-            <input type="number" id="age" name="age" min="1" max="120" required>
+            <input type="number" id="age" name="age" min="1" max="120" placeholder="Votre âge" required>
 
             <label for="question">Votre question :</label>
             <textarea id="question" name="question" rows="6" placeholder="Écrivez votre question ici..." required></textarea>
@@ -54,11 +57,16 @@
             <button type="submit">Envoyer</button>
 
         </form>
+
+        <p id="message-confirmation"></p>
+
     </main>
 
     <footer>
         <p>© 2026 Tek Zheng Outmaite. Tous droits réservés.</p>
     </footer>
+
+    <script src="../JS/contact.js"></script>
 
 </body>
 </html>

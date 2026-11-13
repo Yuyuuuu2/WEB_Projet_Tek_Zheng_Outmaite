@@ -596,3 +596,24 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 0 15px #00f7ff;
 }
+
+#message-confirmation {
+    text-align: center;
+    color: rgb(90, 9, 138);
+    font-family: 'Press Start 2P', monospace;
+    font-size: 24px;
+    margin: 20px;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.page-visible {
+    opacity: 1;
+}
+
+body.page-cachee {
+    opacity: 0;
+}
