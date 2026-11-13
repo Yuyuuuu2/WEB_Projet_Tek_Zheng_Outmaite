@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
-@import url('"https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 #background {
      background-color: black;
@@ -155,16 +155,13 @@
     left: 0;
     width: 100%;
     height: 90px;
-
+    font-family: 'Press Start 2P', monospace;
     background-color: #101a30;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 40px;
     box-sizing: border-box;
-
     z-index: 1000;
 }
 
@@ -306,7 +303,7 @@ body {
     height: 300px;
     padding: 10px;
     overflow-y: auto;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #123a6e;
     font-family: Arial, sans-serif;
 }
 
@@ -328,7 +325,7 @@ body {
     padding: 10px 20px;
     min-width: 100px;    
     border: none;
-    background-color: rgb(22,55,103);
+    background-color: rgb(90, 9, 138);
     color: white;
     cursor: pointer;
     border-radius: 8px;
@@ -355,7 +352,7 @@ body {
 }
 
 .bot {
-    background-color: #e0e0e0;
+    background-color: black;
     align-self: flex-start;
 }
 
@@ -418,4 +415,101 @@ footer {
     font-size: 50px;
     text-shadow: 3px 3px 8px black;
     color: white;
+}
+
+
+.section-depart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    gap: 25px;
+}
+
+.bouton-depart {
+    display: inline-block;
+    padding: 35px 70px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff0055, #8a00ff);
+    border: 3px solid #00f7ff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00f7ff,
+                0 0 25px #8a00ff,
+                0 8px 0 #35005c;
+    text-shadow: 0 0 10px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.bouton-depart:hover {
+    transform: scale(1.15);
+    background: linear-gradient(135deg, #ff007f, #6200ff);
+    box-shadow: 0 0 15px #00f7ff,
+                0 0 35px #ff00ff,
+                0 0 60px #8a00ff;
+    letter-spacing: 3px;
+}
+
+.fleches {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.fleches span {
+    font-size: 55px;
+    color: #00f7ff;
+    text-shadow: 0 0 10px #00f7ff,
+                 0 0 25px #008cff;
+    animation: bouger 0.7s infinite alternate;
+}
+
+.fleches span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+@keyframes bouger {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+
+
+.liste-jeux .jeu {
+    opacity: 0;
+    animation: apparition 1.2s ease forwards;
+}
+
+.liste-jeux .jeu1 {
+    animation-delay: 0.3s;
+}
+
+.liste-jeux .jeu2 {
+    animation-delay: 0.8s;
+}
+
+.liste-jeux .jeu3 {
+    animation-delay: 1.3s;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        filter: brightness(0);
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        filter: brightness(1);
+        transform: translateY(0);
+    }
 }
