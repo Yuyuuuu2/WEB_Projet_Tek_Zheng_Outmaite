@@ -1,153 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+
+/*Global */
+
 #background {
-     background-color: black;
-     padding: 20px;
-     text-align: center;
- }
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
 
 #header {
-     background-color: #4CAF50;
-     color: white;
-     padding: 10px;
-     text-align: center;
- }
-
-#h1{
-    font-size:40px;
-    color:black
-}
-
-.persona3 {
-    background-image: url('../Images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 20px;
-    color: black;
-    text-align: center;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
-}
-
-.images {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-.titre_lol{
-    text-align:center;
-}
-
-.banniere1{
-    background-image: url("../Images/lol_image.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 350px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banniere1 h1 {
+    background-color: #4CAF50;
     color: white;
-    font-size: 50px;
-    text-shadow: 3px 3px 8px black;
-}
-
-.body_lol{
-    background-color: #0a192f;
-    color: white;
-}
-
-.h2_lol{
+    padding: 10px;
     text-align: center;
 }
 
-.titre_erreur{
-    text-align: center;
+#h1 {
     font-size: 40px;
-    text-shadow: 3px 3px 8px black;
-    color: #d4af37;
+    color: black;
 }
-
-.erreur {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.erreur img {
-    width: 350px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.erreur li {
-    border: 2px solid #d4af37;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #152840;
-    text-align: center;
-    
-}
-
-.erreur li h5{
-    color:#d4af37;
-    font-weight: bold;
-}
-
-.erreur li h4{
-    color:#d4af37;
-    font-weight: bold;
-}
-
-.logo-carousel {
-    overflow: hidden;
-    width: 100%;
-    padding: 20px 0;
-}
-
-.logo-track {
-    display: flex;
-    align-items: center;
-    width: max-content;
-    animation: scroll 18s linear infinite;
-}
-
-.logo-track img {
-    height: 150px;
-    margin: 0 50px;
-    opacity: 0.8;
-    filter: grayscale(100%);
-    transition: 0.3s;
-}
-
-.logo-track img:hover {
-    filter: grayscale(0%);
-    opacity: 1;
-    transform: scale(1.1);
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-
 
 .banniere {
     position: fixed;
@@ -165,20 +38,17 @@
     z-index: 1000;
 }
 
-
 .logo img {
     height: 155px;
     width: auto;
     object-fit: contain;
 }
 
-
 .navigation ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 45px;
-
     list-style: none;
     margin: 0;
     padding: 0;
@@ -189,219 +59,34 @@
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
-
     transition: 0.3s;
 }
-
 
 .navigation a:hover {
     color: #8da9ff;
     transform: scale(1.1);
 }
 
-
 body {
     padding-top: 110px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
-.grand_cadre_erreur{
-    border: 3px solid #d4af37;
-    border-radius: 15px;
-    padding: 30px;
-    margin: 40px auto;
-    width: 85%;
-    background-color: #0d2038;
-    box-sizing: border-box;
-}
-
-.grand_cadre_tips{
-    border: 3px solid #d4af37;
-    border-radius: 15px;
-    padding: 30px;
-    margin: 40px auto;
-    width: 85%;
-    background-color: #0d2038;
-    box-sizing: border-box;
-}
-
-
-.titre_tips {
-    font-size: 40px;
-    text-align: center;
-    color:#d4af37;
-    text-shadow: 3px 3px 8px black;
-}
-
-.tips {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.tips img {
-    width: 350px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
-}
-
-.tips li {
-    border: 2px solid #d4af37;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #152840;
-    text-align: center;
-    
-}
-    
-
-.tips li h7{
-    color:#d4af37;
-    font-weight: bold;
-}
-
-.tips li h8{
-    color:#d4af37;
-    font-weight: bold;
-}
-
-
-.tips h4 {
-    text-align: center;
-}
-
-.video_lol{
-    text-align: center;
-    color: #d4af37;
-    text-shadow: 3px 3px 8px black;
-    font-size: 40px;
-    font-weight: bolder;
-}
-
-
-#chatbot-section {
-    margin: 40px auto;
-    padding: 30px;
-    max-width: 700px;
-    background-color: #f4f9f4;
-    border: 2px solid #8a00ff;
-    border-radius: 15px;
-    box-shadow: 0 0 15px #8a00ff;
-}
-
-#chat-container {
-    max-width: 550px;
-    margin: auto;
-    border: 2px solid #00f7ff;
-    border-radius: 12px;
-    overflow: hidden;
-    background-color: #222;
-    display: flex;
-    flex-direction: column;
-}
-
-#chat-box {
-    height: 300px;
-    padding: 15px;
-    overflow-y: auto;
-    border-bottom: 1px solid #00f7ff;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-family: Arial, sans-serif;
-}
-
-
-#chat-input-area {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: stretch;
-    padding: 15px;
-    background-color: #222;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-#user-input {
-    display: block;
-    width: 100%;
-    min-height: 50px;
-    padding: 15px;
-    box-sizing: border-box;
-    border: 2px solid #00f7ff;
-    border-radius: 8px;
-    background-color: white;
-    color: black;
-    font-size: 16px;
-}
-
-
-#user-input::placeholder {
-    color: #666;
+body.page-visible {
     opacity: 1;
 }
 
-
-#user-input:focus {
-    outline: none;
-    border: 2px solid #8a00ff;
+body.page-cachee {
+    opacity: 0;
 }
 
-#bouton-envoi {
-    padding: 15px;
-    border: 2px solid #00f7ff;
-    background: linear-gradient(135deg, #ff0055, #8a00ff);
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-    text-align: center;
-    white-space: nowrap;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 10px;
-    transition: 0.3s;
+.images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
-
-#bouton-envoi:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #00f7ff;
-}
-
-.message {
-    margin: 5px 0;
-    padding: 12px;
-    border-radius: 10px;
-    max-width: 75%;
-    font-size: 12px;
-    line-height: 1.6;
-}
-
-.user {
-    background-color: rgb(90, 9, 138);
-    color: white;
-    align-self: flex-end;
-    text-align: right;
-    font-family: 'Press Start 2P', monospace;
-}
-
-.bot {
-    background-color: #333;
-    color: white;
-    border: 1px solid #00f7ff;
-    align-self: flex-start;
-    font-family: 'Press Start 2P', monospace;
-}
-
-#map {
-    height: 400px;
-    width: 40%;
-    margin: 20px auto;
-    border-radius: 10px;
-    border: 2px solid #8a00ff;
-}
-
 
 footer {
     text-align: center;
@@ -412,46 +97,8 @@ footer {
     color: white;
 }
 
-.liste-jeux ul {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    list-style: none;
-}
 
-.jeux{
-    background-image: url('../Images/jeux.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    font-family: 'Press Start 2P', monospace;
-    font-weight: 700;
-}
-
-.liste-jeux img {
-    transition: transform 0.3s ease;
-}
-
-.liste-jeux img:hover {
-    transform: scale(1.1);
-}
-
-.jeux h2 {
-    font-size: 80px;
-    text-shadow: 3px 3px 8px black;
-    color: white;
-}
-
-.jeux h3 {
-    font-size: 50px;
-    text-shadow: 3px 3px 8px black;
-    color: white;
-}
-
+/*Accueil */
 
 .section-depart {
     display: flex;
@@ -517,6 +164,47 @@ footer {
 }
 
 
+/*Jeux */
+
+.jeux {
+    background-image: url('../Images/jeux.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', monospace;
+    font-weight: 700;
+}
+
+.jeux h2 {
+    font-size: 80px;
+    text-shadow: 3px 3px 8px black;
+    color: white;
+}
+
+.jeux h3 {
+    font-size: 50px;
+    text-shadow: 3px 3px 8px black;
+    color: white;
+}
+
+.liste-jeux ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.liste-jeux img {
+    transition: transform 0.3s ease;
+}
+
+.liste-jeux img:hover {
+    transform: scale(1.1);
+}
 
 .liste-jeux .jeu {
     opacity: 0;
@@ -541,7 +229,6 @@ footer {
         filter: brightness(0);
         transform: translateY(30px);
     }
-
     to {
         opacity: 1;
         filter: brightness(1);
@@ -549,6 +236,329 @@ footer {
     }
 }
 
+
+/*League of Legends */
+
+.titre_lol {
+    text-align: center;
+}
+
+.banniere1 {
+    background-image: url("../Images/lol_image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banniere1 h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 3px 3px 8px black;
+}
+
+.body_lol {
+    background-color: #0a192f;
+    color: white;
+}
+
+.h2_lol {
+    text-align: center;
+}
+
+.body_lol ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.titre_erreur {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 3px 3px 8px black;
+    color: #d4af37;
+}
+
+.erreur {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.erreur img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.erreur li {
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #152840;
+    text-align: center;
+}
+
+.erreur li h5,
+.erreur li h4 {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.grand_cadre_erreur {
+    border: 3px solid #d4af37;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px auto;
+    width: 85%;
+    background-color: #0d2038;
+    box-sizing: border-box;
+}
+
+.grand_cadre_tips {
+    border: 3px solid #d4af37;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px auto;
+    width: 85%;
+    background-color: #0d2038;
+    box-sizing: border-box;
+}
+
+.titre_tips {
+    font-size: 40px;
+    text-align: center;
+    color: #d4af37;
+    text-shadow: 3px 3px 8px black;
+}
+
+.tips {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tips img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.tips li {
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #152840;
+    text-align: center;
+}
+
+.tips li h7,
+.tips li h8 {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.tips h4 {
+    text-align: center;
+}
+
+.video_lol {
+    text-align: center;
+    color: #d4af37;
+    text-shadow: 3px 3px 8px black;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+/*Monster Hunter Rise */
+
+/*Persona 3*/
+
+.persona3 {
+    background-image: url('../Images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
+
+.persona3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-carousel {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: scroll 18s linear infinite;
+}
+
+.logo-track img {
+    height: 150px;
+    margin: 0 50px;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.logo-track img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/*Chatbot */
+
+#chatbot-section {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 700px;
+    background-color: #f4f9f4;
+    border: 2px solid #8a00ff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #8a00ff;
+}
+
+#chat-container {
+    max-width: 550px;
+    margin: auto;
+    border: 2px solid #00f7ff;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-box {
+    height: 300px;
+    padding: 15px;
+    overflow-y: auto;
+    border-bottom: 1px solid #00f7ff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+
+#chat-input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+    padding: 15px;
+    background-color: #222;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#user-input {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid #00f7ff;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+#user-input::placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+#user-input:focus {
+    outline: none;
+    border: 2px solid #8a00ff;
+}
+
+#bouton-envoi {
+    padding: 15px;
+    border: 2px solid #00f7ff;
+    background: linear-gradient(135deg, #ff0055, #8a00ff);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+#bouton-envoi:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00f7ff;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 12px;
+    border-radius: 10px;
+    max-width: 75%;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.user {
+    background-color: rgb(90, 9, 138);
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.bot {
+    background-color: #333;
+    color: white;
+    border: 1px solid #00f7ff;
+    align-self: flex-start;
+    font-family: 'Press Start 2P', monospace;
+}
+
+#map {
+    height: 400px;
+    width: 40%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #8a00ff;
+}
+
+
+/*Formulaire de contact */
 
 .formulaire-contact {
     display: flex;
@@ -604,29 +614,3 @@ footer {
     font-size: 24px;
     margin: 20px;
 }
-
-body {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-body.page-visible {
-    opacity: 1;
-}
-
-body.page-cachee {
-    opacity: 0;
-}
-
-.persona3 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.body_lol ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
