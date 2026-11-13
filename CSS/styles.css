@@ -1,0 +1,287 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+#background {
+     background-color: black;
+     padding: 20px;
+     text-align: center;
+ }
+
+#header {
+     background-color: #4CAF50;
+     color: white;
+     padding: 10px;
+     text-align: center;
+ }
+
+#h1{
+    font-size:40px;
+    color:black
+}
+
+.persona3 {
+    background-image: url('../Images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
+
+.images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.titre_lol{
+    text-align:center;
+}
+
+.banniere1{
+    background-image: url("../Images/lol_image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banniere1 h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 3px 3px 8px black;
+}
+
+.body_lol{
+    background-color: #0a192f;
+    color: white;
+}
+
+.h2_lol{
+    text-align: center;
+}
+
+.titre_erreur{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 3px 3px 8px black;
+    color: #d4af37;
+}
+
+.erreur {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.erreur img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.erreur li {
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #152840;
+    text-align: center;
+    
+}
+
+.erreur li h5{
+    color:#d4af37;
+    font-weight: bold;
+}
+
+.erreur li h4{
+    color:#d4af37;
+    font-weight: bold;
+}
+
+.logo-carousel {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: scroll 18s linear infinite;
+}
+
+.logo-track img {
+    height: 150px;
+    margin: 0 50px;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.logo-track img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+.banniere {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+
+    background-color: #101a30;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    z-index: 1000;
+}
+
+
+.logo img {
+    height: 155px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.navigation a:hover {
+    color: #8da9ff;
+    transform: scale(1.1);
+}
+
+
+body {
+    padding-top: 110px;
+}
+
+.grand_cadre_erreur{
+    border: 3px solid #d4af37;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px auto;
+    width: 85%;
+    background-color: #0d2038;
+    box-sizing: border-box;
+}
+
+.grand_cadre_tips{
+    border: 3px solid #d4af37;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px auto;
+    width: 85%;
+    background-color: #0d2038;
+    box-sizing: border-box;
+}
+
+
+.titre_tips {
+    font-size: 40px;
+    text-align: center;
+    color:#d4af37;
+    text-shadow: 3px 3px 8px black;
+}
+
+.tips {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tips img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.tips li {
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #152840;
+    text-align: center;
+    
+}
+    
+
+.tips li h7{
+    color:#d4af37;
+    font-weight: bold;
+}
+
+.tips li h8{
+    color:#d4af37;
+    font-weight: bold;
+}
+
+
+.tips h4 {
+    text-align: center;
+}
+
+.video_lol{
+    text-align: center;
+    color: #d4af37;
+    text-shadow: 3px 3px 8px black;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+>>>>>>> 2f94eae10660ec4931df1a7b0ea77d0ae85608d1
