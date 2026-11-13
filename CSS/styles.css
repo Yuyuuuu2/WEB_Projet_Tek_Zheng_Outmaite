@@ -223,6 +223,18 @@ footer {
     animation-delay: 1.3s;
 }
 
+.liste-jeux img {
+    border: 3px solid #8a00ff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #8a00ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.liste-jeux img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00f7ff;
+}
+
 @keyframes apparition {
     from {
         opacity: 0;
@@ -416,7 +428,7 @@ footer {
 .logo-track img {
     height: 150px;
     margin: 0 50px;
-    opacity: 0.8;
+    opacity: 1;
     filter: grayscale(100%);
     transition: 0.3s;
 }
@@ -424,7 +436,16 @@ footer {
 .logo-track img:hover {
     filter: grayscale(0%);
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.3);
+}
+
+.footing {
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Press Start 2P', monospace;
 }
 
 @keyframes scroll {
