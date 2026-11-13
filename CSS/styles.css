@@ -280,85 +280,118 @@ body {
     font-weight: bolder;
 }
 
+
 #chatbot-section {
-    margin: 40px 0;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 700px;
     background-color: #f4f9f4;
-    border-radius: 10px;
+    border: 2px solid #8a00ff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #8a00ff;
 }
 
 #chat-container {
-    max-width: 500px;
+    max-width: 550px;
     margin: auto;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border: 2px solid #00f7ff;
+    border-radius: 12px;
     overflow: hidden;
-    background-color: white;
+    background-color: #222;
     display: flex;
     flex-direction: column;
 }
 
-
 #chat-box {
     height: 300px;
-    padding: 10px;
+    padding: 15px;
     overflow-y: auto;
-    border-bottom: 1px solid #123a6e;
+    border-bottom: 1px solid #00f7ff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     font-family: Arial, sans-serif;
 }
 
 
 #chat-input-area {
     display: flex;
-    gap: 10px;
-    align-items: center; 
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+    padding: 15px;
+    background-color: #222;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #user-input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid #00f7ff;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+
+#user-input::placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+
+#user-input:focus {
+    outline: none;
+    border: 2px solid #8a00ff;
 }
 
 #bouton-envoi {
-    padding: 10px 20px;
-    min-width: 100px;    
-    border: none;
-    background-color: rgb(90, 9, 138);
+    padding: 15px;
+    border: 2px solid #00f7ff;
+    background: linear-gradient(135deg, #ff0055, #8a00ff);
     color: white;
     cursor: pointer;
     border-radius: 8px;
     text-align: center;
-    white-space: nowrap;   
+    white-space: nowrap;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    transition: 0.3s;
 }
 
 #bouton-envoi:hover {
-    background-color: rgb(11, 27, 51);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00f7ff;
 }
 
 .message {
     margin: 5px 0;
-    padding: 8px 12px;
+    padding: 12px;
     border-radius: 10px;
-    max-width: 70%;
+    max-width: 75%;
+    font-size: 12px;
+    line-height: 1.6;
 }
 
 .user {
-    background-color: rgb(22,55,103);
+    background-color: rgb(90, 9, 138);
     color: white;
     align-self: flex-end;
     text-align: right;
+    font-family: 'Press Start 2P', monospace;
 }
 
 .bot {
-    background-color: black;
+    background-color: #333;
+    color: white;
+    border: 1px solid #00f7ff;
     align-self: flex-start;
-}
-
-#chat-box {
-    display: flex;
-    flex-direction: column;
+    font-family: 'Press Start 2P', monospace;
 }
 
 #map {
@@ -366,7 +399,9 @@ body {
     width: 40%;
     margin: 20px auto;
     border-radius: 10px;
+    border: 2px solid #8a00ff;
 }
+
 
 footer {
     text-align: center;
@@ -512,4 +547,52 @@ footer {
         filter: brightness(1);
         transform: translateY(0);
     }
+}
+
+
+.formulaire-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #222;
+    border: 2px solid #00f7ff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00f7ff;
+}
+
+.formulaire-contact label {
+    color: white;
+    font-weight: bold;
+}
+
+.formulaire-contact input,
+.formulaire-contact select,
+.formulaire-contact textarea {
+    padding: 12px;
+    border: 1px solid #00f7ff;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+.formulaire-contact button {
+    padding: 15px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #ff0055, #8a00ff);
+    color: white;
+    border: 2px solid #00f7ff;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulaire-contact button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00f7ff;
 }
