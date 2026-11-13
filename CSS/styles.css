@@ -617,4 +617,19 @@ body.page-visible {
 body.page-cachee {
     opacity: 0;
 }
+<<<<<<< HEAD
 eee
+=======
+
+.persona3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.body_lol ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+>>>>>>> 648bbe53d2c456398adc8661194e7d11523be2fb
