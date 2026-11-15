@@ -390,104 +390,100 @@ footer {
 
 
 /*Monster Hunter Rise */
-:root {
+
+body.monsterhunter {
     --fond: #121212;
     --carte: #1e1e1e;
     --texte: #e8e8e8;
     --accent: #e63946;
-}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background: var(--fond);
+    background-color: var(--fond);
     color: var(--texte);
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-.banniere {
+.monsterhunter .banniere {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 30px;
-    background: var(--carte);
+    background-color: var(--carte);
     border-bottom: 3px solid var(--accent);
 }
 
-.logo img {
+.monsterhunter .logo img {
     height: 50px;
+    width: auto;
     display: block;
 }
 
-.navigation ul {
+.monsterhunter .navigation ul {
     display: flex;
     gap: 24px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.navigation a {
+.monsterhunter .navigation a {
     color: var(--texte);
     text-decoration: none;
     font-weight: bold;
 }
 
-.navigation a:hover {
+.monsterhunter .navigation a:hover {
     color: var(--accent);
 }
 
-main {
+.monsterhunter main {
     max-width: 900px;
     margin: 0 auto;
     padding: 30px 20px;
 }
 
-h1 {
+.monsterhunter h1 {
     color: var(--accent);
     margin: 20px 0;
 }
 
-h2,
-h3 {
+.monsterhunter h2,
+.monsterhunter h3 {
     color: var(--accent);
     margin-bottom: 12px;
 }
 
-p {
+.monsterhunter p {
     margin-bottom: 14px;
 }
 
-section {
-    background: var(--carte);
+.monsterhunter section {
+    background-color: var(--carte);
     border-radius: 12px;
     padding: 24px;
     margin-top: 28px;
 }
 
-ul {
+.monsterhunter ul {
     padding-left: 20px;
 }
 
-li {
+.monsterhunter li {
     margin-bottom: 10px;
 }
 
-li:has(iframe) {
+.monsterhunter li:has(iframe) {
     list-style: none;
 }
 
-main img {
+.monsterhunter main img {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
     margin: 8px 8px 8px 0;
 }
 
-iframe {
+.monsterhunter iframe {
     width: 100%;
     max-width: 560px;
     aspect-ratio: 16 / 9;
@@ -496,7 +492,7 @@ iframe {
     border-radius: 12px;
 }
 
-footer {
+.monsterhunter footer {
     text-align: center;
     padding: 24px;
     color: #888;
@@ -504,9 +500,17 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .banniere {
+    .monsterhunter .banniere {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .monsterhunter main {
+        padding: 20px 12px;
+    }
+
+    .monsterhunter section {
+        padding: 15px;
     }
 }
 
