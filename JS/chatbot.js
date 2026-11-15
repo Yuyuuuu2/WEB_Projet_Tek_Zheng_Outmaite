@@ -1,4 +1,3 @@
-
 class ChatHistory {
     constructor() {
         this.messages = [];
